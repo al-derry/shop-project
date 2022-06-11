@@ -15,3 +15,7 @@ use App\Http\Controllers\Auth\AuthApiController;
 */
 
 Route::post('login', [AuthApiController::class,'login']);
+Route::get('/test', function () {
+    return 'ddd';
+});
+
