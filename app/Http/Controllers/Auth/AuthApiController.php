@@ -17,7 +17,7 @@ class AuthApiController extends Controller
             
             // $body = $req->getContent();
             // $request = json_decode($body);
-            
+            return  response()->json($req->input('email'));
             $validator = Validator::make($req->all(),[
                 "email" => "required|string|email|max:100",
                 "password" => "required|string|min:6"
